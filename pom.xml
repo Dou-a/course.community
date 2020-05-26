@@ -85,6 +85,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+        <!--集成flyway插件-->
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.4.2</version>
+                <configuration>
+                    <url>jdbc:mysql://localhost:3306/flyway?serverTimezone=UTC</url>
+                    <user>root</user>
+                    <password>root</password>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
